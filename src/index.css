@@ -78,3 +78,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* 📅 Make calendar icon visible on white background */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* ⬅️ Turns white to black */
+  opacity: 1;
+  cursor: pointer;
+}
+
